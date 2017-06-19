@@ -60,8 +60,8 @@ fn main() {
     let mut normal_text = gfx_text::new(factory.clone()).unwrap();
 
     let pso = factory.create_pipeline_simple(
-        include_bytes!("shaders/shdr_120.glslv"),
-        include_bytes!("shaders/shdr_120.glslf"),
+        include_bytes!("shaders/shdr_150.vert"),
+        include_bytes!("shaders/shdr_150.frag"),
         pipe::new()
     ).expect("Failed to create pipeline");
 
